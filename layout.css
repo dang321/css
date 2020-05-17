@@ -1,0 +1,43 @@
+.flex{
+    border: 1px solid black;
+}
+header{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 2px aqua;
+    color: aquamarine;
+    font-size: 20px;
+}
+nav{
+    border-right: 1px solid black;     
+    padding: 25px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+main .img{
+    background: url(flower.jpg);
+    width: 600px;
+    height: 400px;
+}
+aside{
+    border-left: 1px solid black;
+    padding-right: 50px;
+}
+section{
+    display: flex;
+}
+footer{
+    border-top: 1px solid black;
+    margin-top: -1px;
+    text-align: center;
+    padding: 20px;
+}
+nav, aside{
+    flex-shrink: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:plum;
+}

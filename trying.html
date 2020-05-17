@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                width: 250px;
+                height: 250px;
+                margin-top: 300px;
+                animation: img 2s infinite;
+                position: relative;
+            }
+            @keyframes img{
+                from{
+                    left: 0;
+                    transform: rotate(0);
+                }
+                to{
+                    left: 700px;
+                    transform: rotate(720deg);
+                }
+            }
+            .rainbow{
+                border: 1px solid red;
+                width: 150px;
+                height: 150px;
+                background: red;
+                margin-top: 200px;
+                animation: rainbow 2s infinite;
+                position: relative;
+            }
+            @keyframes rainbow{
+                from{   
+                    left: 0;
+                    transform: scale(1) rotate(0);
+                }
+                10%{background: red; border: 1px solid red;}
+                30%{background: orange; border: 1px solid orange;}
+                50%{background: yellow; border: 1px solid yellow;}
+                70%{background: green; border: 1px solid green;}
+                100%{background: blue; border: 1px solid blue;} 
+                to{
+                    left: 700px;
+                    transform: scale(2) rotate(720deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rainbow"></div>
+        <img src="Vector.svg" alt="">
+    </body>
+</html>

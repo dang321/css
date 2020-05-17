@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: black;
+                transition:all 1s;
+            }
+            div{
+                background-color: black;
+                color: white;
+                width: 200px;
+                padding: 10px;
+                height: 50px;
+                font-size: 2rem;
+                -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+                -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+                -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+                -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+                transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+            }
+            div:hover {
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>transition</div>
+    </body>
+</html>

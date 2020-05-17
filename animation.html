@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box{
+                border: 2px solid black;
+                width: 100px;
+                height: 100px;
+                background: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                font-size: 25px;
+                position: relative;
+                animation: box 2s infinite;
+                margin-top: 200px;
+            }
+            @keyframes box{
+                from{
+                    left: 0;
+                    transform: scale(0) rotate(0);
+                    border: 2px solid red;
+                    background: red;
+                }
+                to{
+                    left: 740px;
+                    transform: scale(2) rotate(720deg);
+                    border: 2px solid orange;
+                    background: orange;
+                }
+            }
+            .animation{
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+                background: red;
+                color: white;
+                text-align: center;
+                margin-top: 300px;
+                margin-left: 300px;
+                font-size: 2rem;
+                padding: 10px;
+                animation: inssa 3s infinite;
+                position: relative;
+            }
+            @keyframes inssa{
+                from{
+                    transform: rotate(0);
+                    background: red;
+                    border: 2px solid red;
+                    right: 0;
+                }
+                to{
+                    transform: rotate(360deg);
+                    background: orange;
+                    border: 2px solid orange;
+                    right: 500px;
+                }
+            }
+            .twin{
+                border: 2px solid brown;
+                width: 200px;
+                height: 200px;
+                background: yellow;
+                color: white;
+                text-align: center;
+                margin-bottom: 150px;
+                margin-left: 350px;
+                font-size: 2rem;
+                padding: 1px;
+                animation: twin 3s infinite;
+                position: relative;
+            }
+            @keyframes twin{
+                from{
+                    transform: rotate(0);
+                    background: yellow;
+                    border: 2px solid yellow;
+                    left: 0;
+                }
+                to{
+                    transform: rotate(360deg);
+                    background: green;
+                    border: 2px solid green;
+                    left: 500px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">I'm box</div>
+        <div class="animation">inwook</div>
+        <div class="twin">inssa</div>
+    </body>
+</html>

@@ -42,7 +42,49 @@
                 margin-top: 20px;
                 background-size: cover;
                 background-color: rgb(0, 50,0);
+                display: flex;
+                flex-shrink: 0;
                 background-blend-mode: lighten;
+            }
+            @media (max-width: 850px) {
+                .nature{
+                    filter: grayscale(80%);
+                }
+            }
+            .hello:hover{
+                transform: scale(1.5);
+                transform-origin: left top;
+                transition: all 1s;
+            }
+            .content{
+                width: 200px; height: 200px;
+                border: 2px solid black;
+                background-color: black;
+                margin-left: 300px; 
+                transition: all 1s;
+            }
+            .content:hover{
+                transform: rotate(180deg);
+                border: 2px solid gray;
+                background-color: gray;
+            }
+            ul{
+                font-size: 2rem;
+                list-style: none;
+                background: aqua;
+                width: 100px;
+                animation: hello 1s infinite;
+                position: relative
+            }
+            @keyframes hello{
+                from{
+                    left: 0;
+                    transform: rotate(0);
+                }
+                to{
+                    left: 700px;
+                    transform: rotate(360deg);
+                }
             }
         </style>
     </head>
@@ -60,5 +102,11 @@
             <div class="i">legend</div>
         </div> 
         <div class="nature"></div>
+        <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+        <div class="content"></div>
     </body>
 </html>
